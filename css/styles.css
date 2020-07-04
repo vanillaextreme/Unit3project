@@ -1,0 +1,188 @@
+/* Base Styles */
+
+body {
+color: grey;
+font-family: 'Merriweather', serif;
+}
+
+h1 {
+color: white;
+font-size: 1.5em;  
+
+}
+
+h2 {
+color: rgb(36, 39, 68);
+font-size: 1.25em;
+}
+
+header {
+background-color: rgb(36, 39, 68);
+height: 75px;
+text-align: center;
+padding-top: 1em;
+padding-bottom: 1em;
+}
+
+.main-header {
+display: flex;
+flex-direction: column;
+align-self: center;
+}
+
+.border {
+border-top: 3px solid rgb(36, 39, 68);
+border-bottom: 1px solid rgb(36, 39, 68);
+padding-bottom: 5px;
+margin: 10px 15px 30px 15px;
+}
+
+fieldset {
+background-color: rgb(250, 250, 250);
+border: none;
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+}
+
+.box {
+color: rgb(36, 39, 68);
+background: rgb(230, 230, 230);
+border: none;
+font-size: .7em;
+height: 50px;
+margin-top: 15px;
+margin-bottom: 15px;
+
+border-radius: 5px;
+text-align: end;
+width: 100%;
+}
+
+.zip-code {
+display: flex;
+flex-direction: column;
+width: 50%;
+}
+
+.center {
+text-align: center;
+}
+
+.border-single {
+border-bottom: 1px solid rgb(36, 39, 68);
+margin: 15px;
+}
+
+.newsletter-form {
+display: flex;
+flex-direction: column;
+}
+
+.form-title {
+color: rgb(36, 39, 68);
+font-weight: bold;
+}
+
+.box-message {
+background: rgb(230, 230, 230);
+border: none;
+min-height: 150px;
+margin-top: 15px;
+margin-bottom: 15px;
+border-radius: 5px;
+width: 100%;
+}
+
+.contact {
+margin-top: 30px;
+}
+
+#newsletter {
+line-height: 3em;
+}
+
+button {
+background: turquoise;
+border: none;
+border-radius: 5px;
+color: white;
+justify-content: center;
+height: 50px;
+width: 100%;
+}
+
+footer {
+text-align: center;
+font-style: italic;
+}
+
+.contact placeholder
+
+/* Pseudo Styles */
+
+.contact, input:hover,
+textarea:hover,
+select:hover {
+background-color: tomato;
+}
+
+button:hover {
+background-color: tomato;
+}
+
+.contact input:focus,
+textarea:focus,
+select:focus {
+border: 2px solid cyan;    
+background-color: violet;
+height: 100px;
+transition: border 2s, height 2s, background-color 2s, transform 2s;
+}
+
+/* .contact,
+input,
+textarea,
+select {
+transition: width 2s, height 4s;    
+} */
+
+/* Media Query */
+
+@media (min-width: 768px) {
+
+.border,
+.margin {
+margin-left: 215px;
+margin-right: 215px;
+}
+
+.contact-form,
+.newsletter-form {
+margin-left: 200px;
+margin-right: 200px;  
+}
+
+.contact {
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: baseline;
+}
+
+.contact label {
+flex-basis: 150px;
+min-width: 150px;
+}
+
+.contact input,
+select {
+    flex-basis: 100%;
+}
+.zip-code {
+max-width: 50%;
+}
+
+}
