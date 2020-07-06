@@ -63,6 +63,10 @@ border-radius: 5px;
 width: 100%;
 }
 
+label[for="zip"] {
+display: block;    
+}
+
 #zip {
 width: 50%;
 }
