@@ -24,22 +24,27 @@ padding-top: 1em;
 padding-bottom: 1em;
 }
 
-.main-header {
+.sign-up {
 display: flex;
 flex-direction: column;
 align-self: center;
 }
 
-.border {
+.double-border {
 border-top: 3px solid rgb(36, 39, 68);
 border-bottom: 1px solid rgb(36, 39, 68);
 padding-bottom: 5px;
-margin: 10px 15px 30px 15px;
+width: 90%;
+margin: auto;
+margin-bottom: 30px;
+
 }
 
 fieldset {
 background-color: rgb(250, 250, 250);
 border: none;
+width: 90%;
+margin: auto;
 }
 
 .contact-form {
@@ -48,23 +53,23 @@ flex-direction: column;
 }
 
 .box {
-color: rgb(36, 39, 68);
 background: rgb(230, 230, 230);
 border: none;
+color: rgb(36, 39, 68);
 font-size: .7em;
 height: 50px;
-margin-top: 15px;
-margin-bottom: 15px;
-
+margin: auto;
 border-radius: 5px;
-text-align: end;
 width: 100%;
 }
 
-.zip-code {
-display: flex;
-flex-direction: column;
+#zip {
 width: 50%;
+}
+
+input::placeholder {
+padding-right: 10px;
+text-align: right;
 }
 
 .center {
@@ -73,12 +78,8 @@ text-align: center;
 
 .border-single {
 border-bottom: 1px solid rgb(36, 39, 68);
-margin: 15px;
-}
-
-.newsletter-form {
-display: flex;
-flex-direction: column;
+width: 90%;
+margin: auto;
 }
 
 .form-title {
@@ -97,7 +98,8 @@ width: 100%;
 }
 
 .contact {
-margin-top: 30px;
+line-height: 3;
+margin-top: 15px;
 }
 
 #newsletter {
@@ -119,11 +121,9 @@ text-align: center;
 font-style: italic;
 }
 
-.contact placeholder
+/* Pseudo Classes */
 
-/* Pseudo Styles */
-
-.contact, input:hover,
+.contact input:hover,
 textarea:hover,
 select:hover {
 background-color: tomato;
@@ -142,27 +142,35 @@ height: 100px;
 transition: border 2s, height 2s, background-color 2s, transform 2s;
 }
 
-/* .contact,
-input,
-textarea,
-select {
-transition: width 2s, height 4s;    
-} */
 
 /* Media Query */
 
 @media (min-width: 768px) {
 
-.border,
-.margin {
-margin-left: 215px;
-margin-right: 215px;
+.double-border {
+width: 70%;
+margin: auto;
+margin-bottom: 30px;
+max-width: 768px;
 }
 
-.contact-form,
+.border-single {
+    width: 70%;
+    max-width: 768px;
+    margin: auto;
+}
+
+/* .contact-form,
 .newsletter-form {
-margin-left: 200px;
-margin-right: 200px;  
+margin: 0 auto;
+width: 70%;
+max-width: 768px;
+} */
+
+fieldset {
+margin: 0 auto;
+width: 70%;
+max-width: 768px;  
 }
 
 .contact {
@@ -181,8 +189,6 @@ min-width: 150px;
 select {
     flex-basis: 100%;
 }
-.zip-code {
-max-width: 50%;
-}
+
 
 }
