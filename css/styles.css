@@ -194,5 +194,9 @@ select {
     flex-basis: 100%;
 }
 
+#zip {
+margin: 0;
+max-width: 25%;
+}
 
 }
